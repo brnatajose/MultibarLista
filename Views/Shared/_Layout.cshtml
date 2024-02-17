@@ -13,35 +13,32 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow laranja">
-            <div class="container">                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse-topo" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse-topo collapse d-sm-inline-flex ">
-                    <ul class="navbar-nav flex-grow-1 justify-content-between">
-                        <li class="nav-item d-flex justify-content-center align-content-center">
-                            <i class="fa-brands fa-whatsapp fa-2x m-auto" style="color: #06d01e;"></i>
-                            <a class="nav-link text-white align-content-center" asp-area="" asp-controller="Home" asp-action="Index"> Compre via whatsapp (XX) 97227-5917</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Nossas lojas</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-light bg-white box-shadow laranja d-none d-sm-flex">
+            <div class="container">
+                <ul class="navbar-nav flex-row justify-content-between align-items-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-white d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                            <i class="fa-brands fa-whatsapp fa-2x mr-2 me-2" style="color: #06d01e;"></i>
+                            Compre via whatsapp (XX) 97227-5917
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Nossas lojas</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light azul pt-3">
             <div class="container d-flex justify-content-between">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="~/img/logo_multibar.png" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-grow-1 d-flex justify-content-end g-2 align-items-center">
                         <li class="nav-item d-flex">
                             <i class="fa-solid fa-user m-auto" style="color: #ffffff;"></i>
@@ -57,7 +54,6 @@
                                     <option value="CB">Cuiabá</option>
                                     <option value="RN">Natal</option>
                                     <option value="RN">João Pessoa</option>
-
                                 </select>
                             </div>
                         </li>
@@ -65,6 +61,7 @@
                 </div>
             </div>
         </nav>
+
     </header>
     <div>
         <main role="main" class="pb-3">
