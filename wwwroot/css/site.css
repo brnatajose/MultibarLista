@@ -141,7 +141,7 @@ body {
 .poetsen {
     font-family: 'Poetsen One', sans-serif;
 }
-#main-container-principal-home{
+#main-container-principal-home {
     height: 70vh;
 }
 .btn-primario, .btn-secundario {
@@ -155,12 +155,42 @@ body {
         color: white !important;
 }
 .btn-primario {
-    background-color: var(--laranja-multibar);
+    background-color: var(--laranja-multibar) !important;
 }
 .btn-secundario {
     border-color: white
 }
+.fonte-laranja {
+    color: var(--laranja-multibar);
+}
+.fonte-azul {
+    color: var(--azul-multibar) !important;
+}
+.text-shadow {
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.26);
+}
+.fundo-presente {
+    background-image: url('../img/fundopresente.png');
+    background-repeat: repeat;
+}
+.imagem-homem {
+    position: absolute;
+    top: 12vw;
+    left: 20vh;
+}
 
-
-
-
+.navbar-brand > img {
+    background-color: #052C8F;
+}
+.main-container-inicio-conteudo {
+    margin-top: 5rem;
+}
+.main-container-login {
+    background-image: url('../img/icons-gray-bg.svg');
+    background-color: #F0F1F3;
+    color: #DEE1E6;
+    height: 80vh;
+}
+.main-container-login-box{
+    background-color: white;
+}
