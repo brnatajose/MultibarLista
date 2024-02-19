@@ -188,9 +188,32 @@ body {
 .main-container-login {
     background-image: url('../img/icons-gray-bg.svg');
     background-color: #F0F1F3;
-    color: #DEE1E6;
+    color: #183153;
     height: 80vh;
 }
-.main-container-login-box{
+.main-container-login-box {
     background-color: white;
+    max-width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.25);
+
+}
+.input-icons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative; 
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    position: absolute;
+}
+
+.input-field {
+    width: calc(100% - 40px);
+    padding: 10px;
+    padding-left: 35px;
 }
