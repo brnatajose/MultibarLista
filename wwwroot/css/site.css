@@ -91,7 +91,9 @@ body {
     background-repeat: no-repeat, repeat;
     background-position-x: 10%;
 }
-
+.logo{
+    height: 75px;
+}
 
 .main-container-inicio-conteudo {
     margin-top: 5rem;
